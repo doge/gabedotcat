@@ -1,0 +1,12 @@
+{
+  "en": {
+    "blog_title": "blog",
+    "repo_title": "repositories",
+    "about_title": "about"
+  },
+  "cat": {
+    "blog_title": "bloc",
+    "repo_title": "repositoris",
+    "about_title": "sobre"
+  }
+}
