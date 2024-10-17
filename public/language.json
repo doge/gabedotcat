@@ -2,11 +2,21 @@
   "en": {
     "blog_title": "blog",
     "repo_title": "repositories",
-    "about_title": "about"
+
+    "about_title": "about",
+    "about_content": "I'm Gabe, a hard working, extremely passionate programmer, that's on the constant mission of learning. I'm experienced in writing full-stack web applications using various technology stacks, with a primary focus on back-end development. Recently, I've been finding enjoyment in learning ",
+    "about_closer": "Feel free to view some of my ",
+
+    "technology_title": "technology"
   },
   "cat": {
     "blog_title": "bloc",
     "repo_title": "repositoris",
-    "about_title": "sobre"
+
+    "about_title": "sobre",
+    "about_content": "Sóc en Gabe, un programador treballador i molt apassionat, que té la missió constant d'aprendre. Tinc experiència en escriure aplicacions web de pila completa utilitzant diverses piles de tecnologia, amb un enfocament principal en el desenvolupament de back-end. Recentment, he gaudit aprenent ",
+    "about_closer": "No dubteu a utilitzar alguns dels meus ",
+
+    "technology_title": "tecnologia"
   }
 }

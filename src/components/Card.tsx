@@ -1,6 +1,6 @@
-import { GitHubData } from "../Response";
+import { GitHubResponse } from "../Response";
 
-export default function Card(repo: GitHubData) {
+export default function Card(repo: GitHubResponse) {
   return (
     <>
       <a

@@ -1,7 +1,10 @@
+import { NavigateFunction } from "react-router-dom";
+
 export interface HeaderProps {
   blog_title: string;
   about_title: string;
   repo_title: string;
+  navigate: NavigateFunction;
 }
 
 export default function Header(props: HeaderProps) {
@@ -15,20 +18,16 @@ export default function Header(props: HeaderProps) {
           <a
             href="javascript:void(0);"
             className="hover:underline font-bold text-xl"
+            onClick={() => props.navigate("/about")}
           >
             {props.about_title}
           </a>
           <a
             href="javascript:void(0);"
             className="hover:underline font-bold text-xl"
+            onClick={() => props.navigate("/repositories")}
           >
             {props.repo_title}
-          </a>
-          <a
-            href="javascript:void(0);"
-            className="hover:underline font-bold text-xl"
-          >
-            {props.blog_title}
           </a>
           <a
             href="https://github.com/doge"
