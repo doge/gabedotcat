@@ -4,6 +4,7 @@ export interface HeaderProps {
   blog_title: string;
   about_title: string;
   repo_title: string;
+  contact_title: string;
   navigate: NavigateFunction;
 }
 
@@ -44,7 +45,7 @@ export default function Header(props: HeaderProps) {
             href="mailto:me@gabe.cat"
             className="hover:underline font-bold text-xl"
           >
-            contact
+            {props.contact_title}
           </a>
         </div>
       </div>

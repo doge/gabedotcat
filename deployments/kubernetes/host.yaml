@@ -1,20 +1,19 @@
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-gabecat
   annotations:
-   cert-manager.io/issuer: letsencrypt-nginx
+    cert-manager.io/issuer: letsencrypt-nginx
 spec:
   ingressClassName: nginx
   rules:
-  - host: gabe.cat
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service: 
-            name: gabecat
-            port:
-              number: 80
+    - host: gabe.cat
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: gabecat
+                port:
+                  number: 80

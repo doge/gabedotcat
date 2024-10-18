@@ -38,14 +38,35 @@ export default function About(props: AboutProps) {
           {currentLanguageData.technology_title}
         </h3>
         <ul className="col-span-0 list-none mx-4 my-1">
-          <li className="justify-self-start">go</li>
-          <li className="justify-self-start">rust</li>
-          <li className="justify-self-start">typescript</li>
-          <li className="justify-self-start">javascript</li>
-          <li className="justify-self-start">python</li>
-          <li className="justify-self-start">c#</li>
-          <li className="justify-self-start">mongodb</li>
-          <li className="justify-self-start">sql</li>
+          <li className="justify-self-start font-medium">{currentLanguageData.frontend_label}</li>
+          <ul className="col-span-0 list-none mx-4">
+            <li className="justify-self-start">typescript</li>
+            <li className="justify-self-start">javascript</li>
+            <ul className="col-span-0 list-none mx-4">
+              <li className="justify-self-start">react</li>
+              <li className="justify-self-start">tailwindcss</li>
+              <li className="justify-self-start">bootstrap</li>
+            </ul>
+          </ul>
+          <li className="justify-self-start font-medium">{currentLanguageData.backend_label}</li>
+          <ul className="col-span-0 list-none mx-4">
+            <li className="justify-self-start">go</li>
+            <li className="justify-self-start">rust</li>
+            <li className="justify-self-start">python</li>
+            <li className="justify-self-start">c#</li>
+          </ul>
+          <li className="justify-self-start font-medium">{currentLanguageData.database_label}</li>
+          <ul className="col-span-0 list-none mx-4">
+            <li className="justify-self-start">mongodb</li>
+            <li className="justify-self-start">sql</li>
+          </ul>
+          <li className="justify-self-start font-medium">{currentLanguageData.tooling_label}</li>
+          <ul className="col-span-0 list-none mx-4">
+            <li className="justify-self-start">docker</li>
+            <li className="justify-self-start">kubernetes</li>
+            <li className="justify-self-start">nginx</li>
+            <li className="justify-self-start">github actions</li>
+          </ul>
         </ul>
       </div>
       <div className="justify-self-start mt-4">
