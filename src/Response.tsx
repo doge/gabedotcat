@@ -4,7 +4,7 @@ export interface GitHubResponse {
   name: string;
   full_name: string;
   private: boolean;
-  owner: Owner;
+  owner: Owner | undefined;
   html_url: string;
   description?: string;
   fork: boolean;

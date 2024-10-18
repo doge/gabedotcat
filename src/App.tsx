@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 
 import Container from "./components/Container";
 import Header from "./components/Header";
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Container>
-        <div className="grid grid-rows-2">
+        <div className="grid">
           <LanguagePicker
             language={language}
             onLanguageChange={(requestedLang: keyof Language) => {
@@ -46,6 +46,10 @@ function App() {
               index
               path="/repositories"
               element={<Repositories language={language} />}
+            />
+            <Route
+              path="*"
+              element={<Navigate to="/" replace />}
             />
           </Routes>
         </Container>

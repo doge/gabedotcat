@@ -16,7 +16,7 @@ export interface LanguageProps {
 export default function LanguagePicker(props: LanguageProps) {
   return (
     <>
-      <div className="grid grid-cols-3 px-2 justify-self-end">
+      <div className="flex gap-2 justify-self-end">
         <a
           href="javascript:void(0);"
           className="hover:font-medium"

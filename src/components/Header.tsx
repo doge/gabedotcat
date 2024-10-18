@@ -11,10 +11,14 @@ export default function Header(props: HeaderProps) {
   return (
     <>
       <div className="sm:grid xs:flex grid-cols-2 gap-4 px-2 sm:py-1">
-        <div className="justify-self-start font-bold text-xl">
+        <a
+          href="javascript:void(0);"
+          className="justify-self-center sm:justify-self-start font-bold text-xl"
+          onClick={() => props.navigate("/")}
+        >
           gabe
-        </div>
-        <div className="flex gap-4 justify-self-end">
+        </a>
+        <div className="flex gap-4 justify-self-center sm:justify-self-end">
           <a
             href="javascript:void(0);"
             className="hover:underline font-bold text-xl"
@@ -32,8 +36,15 @@ export default function Header(props: HeaderProps) {
           <a
             href="https://github.com/doge"
             className="hover:underline font-bold text-xl"
+            target="_blank"
           >
             github
+          </a>
+          <a
+            href="mailto:me@gabe.cat"
+            className="hover:underline font-bold text-xl"
+          >
+            contact
           </a>
         </div>
       </div>

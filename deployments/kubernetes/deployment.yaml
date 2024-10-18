@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: gabecat
+ labels:
+   app: gabecat
+spec:
+ replicas: 2
+ selector:
+   matchLabels:
+     app: gabecat
+ template:
+   metadata:
+     labels:
+       app: gabecat
+   spec:
+     containers:
+     - name: gabecat
+       image: sjc.vultrcr.com/opencamp/gabecat:907f491
+       imagePullPolicy: Always
+     imagePullSecrets:
+     - name: vultr-cr-credentials

@@ -5,6 +5,7 @@ export default function Card(repo: GitHubResponse) {
     <>
       <a
         href={repo.html_url}
+        target="_blank"
         className="block h-full w-full p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100"
       >
         <div>
