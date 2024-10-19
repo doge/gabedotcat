@@ -11,10 +11,10 @@ export interface HeaderProps {
 export default function Header(props: HeaderProps) {
   return (
     <>
-      <div className="sm:grid xs:flex grid-cols-2 gap-4 px-2 sm:py-1">
+      <div className="xs:flex sm:grid grid-cols-2 gap-4 px-2 sm:py-1">
         <a
           href="javascript:void(0);"
-          className="justify-self-center sm:justify-self-start font-bold text-xl"
+          className="justify-self-start font-bold text-xl"
           onClick={() => props.navigate("/")}
         >
           gabe

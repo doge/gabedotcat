@@ -12,10 +12,10 @@ export default function About(props: AboutProps) {
 
   return (
     <>
-      <h2 className="font-medium text-2xl mb-4">
+      <h2 className="font-medium text-2xl mb-4 text-center">
         {currentLanguageData.about_title}
       </h2>
-      <p className="justify-self-start">
+      <p className="text-center">
         {currentLanguageData.about_content}{" "}
         <a
           className="font-medium hover:underline"
@@ -33,43 +33,43 @@ export default function About(props: AboutProps) {
           Rust
         </a>.
       </p>
-      <div className="flex mt-6">
-        <h3 className="col-span-0 justify-self-start font-medium text-2xl">
+      <div className="flex mt-6 w-full">
+        <h3 className="col-span-0 font-medium text-2xl">
           {currentLanguageData.technology_title}
         </h3>
         <ul className="col-span-0 list-none mx-4 my-1">
-          <li className="justify-self-start font-medium">{currentLanguageData.frontend_label}</li>
+          <li className="font-medium">{currentLanguageData.frontend_label}</li>
           <ul className="col-span-0 list-none mx-4">
-            <li className="justify-self-start">typescript</li>
-            <li className="justify-self-start">javascript</li>
+            <li>typescript</li>
+            <li>javascript</li>
             <ul className="col-span-0 list-none mx-4">
-              <li className="justify-self-start">react</li>
-              <li className="justify-self-start">tailwindcss</li>
-              <li className="justify-self-start">bootstrap</li>
+              <li>react</li>
+              <li>tailwindcss</li>
+              <li>bootstrap</li>
             </ul>
           </ul>
-          <li className="justify-self-start font-medium">{currentLanguageData.backend_label}</li>
+          <li className="font-medium">{currentLanguageData.backend_label}</li>
           <ul className="col-span-0 list-none mx-4">
-            <li className="justify-self-start">go</li>
-            <li className="justify-self-start">rust</li>
-            <li className="justify-self-start">python</li>
-            <li className="justify-self-start">c#</li>
+            <li>go</li>
+            <li>rust</li>
+            <li>python</li>
+            <li>c#</li>
           </ul>
-          <li className="justify-self-start font-medium">{currentLanguageData.database_label}</li>
+          <li className="font-medium">{currentLanguageData.database_label}</li>
           <ul className="col-span-0 list-none mx-4">
-            <li className="justify-self-start">mongodb</li>
-            <li className="justify-self-start">sql</li>
+            <li>mongodb</li>
+            <li>sql</li>
           </ul>
-          <li className="justify-self-start font-medium">{currentLanguageData.tooling_label}</li>
+          <li className="font-medium">{currentLanguageData.tooling_label}</li>
           <ul className="col-span-0 list-none mx-4">
-            <li className="justify-self-start">docker</li>
-            <li className="justify-self-start">kubernetes</li>
-            <li className="justify-self-start">nginx</li>
-            <li className="justify-self-start">github actions</li>
+            <li>docker</li>
+            <li>kubernetes</li>
+            <li>nginx</li>
+            <li>github actions</li>
           </ul>
         </ul>
       </div>
-      <div className="justify-self-start mt-4">
+      <div className="mt-4">
         {currentLanguageData.about_closer} {""}
 
         <a

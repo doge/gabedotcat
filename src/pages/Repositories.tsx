@@ -42,7 +42,7 @@ export default function Repositories(props: RepositoryProps) {
   else {
     return (
       <>
-        <h2 className="font-medium text-2xl mb-4">
+        <h2 className="font-medium text-2xl mb-4 text-center">
           {currentLanguageData.repo_title}
         </h2>
 
