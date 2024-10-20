@@ -1,10 +1,10 @@
 import React from "react";
 
-import Card from "../components/Card";
+import Card from "../components/RepositoryCard";
 import { GitHubResponse } from "../Response";
 
 import LanguageData from "../../public/language.json";
-import { Language } from "../components/LanguagePicker";
+import { Language } from "../interfaces/LanguagePicker";
 
 export interface RepositoryProps {
   language: keyof Language;

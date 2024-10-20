@@ -1,12 +1,12 @@
 import { GitHubResponse } from "../Response";
 
-export default function Card(repo: GitHubResponse) {
+export default function RepositoryCard(repo: GitHubResponse) {
   return (
     <>
       <a
         href={repo.html_url}
         target="_blank"
-        className="block h-full w-full p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100"
+        className="block h-full w-full p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100 m-2"
       >
         <div>
           <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900">

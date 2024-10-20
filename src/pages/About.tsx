@@ -1,6 +1,6 @@
-import { Language } from "../components/LanguagePicker";
 import LanguageData from "../../public/language.json";
 import { NavigateFunction } from "react-router-dom";
+import { Language } from "../interfaces/LanguagePicker";
 
 export interface AboutProps {
   language: keyof Language;

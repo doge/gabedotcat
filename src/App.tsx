@@ -5,12 +5,16 @@ import Container from "./components/Container";
 import Header from "./components/Header";
 
 import LanguageData from "../public/language.json";
-import LanguagePicker, { Language } from "./components/LanguagePicker";
+import LanguagePicker from "./components/LanguagePicker";
+
+import { Language } from "./interfaces/LanguagePicker";
 
 import About from "./pages/About";
 import Repositories from "./pages/Repositories";
 
 import "./App.css";
+import Blog from "./pages/Blog";
+import BlogContent from "./pages/BlogContent";
 
 function App() {
   const [language, setLanguage] = React.useState<keyof Language>("en");
@@ -46,6 +50,14 @@ function App() {
               index
               path="/repositories"
               element={<Repositories language={language} />}
+            />
+            <Route
+              path="/blog"
+              element={<Blog language={language} />}
+            />
+            <Route
+              path="/blog/:blogId"
+              element={<BlogContent />}
             />
             <Route
               path="*"
